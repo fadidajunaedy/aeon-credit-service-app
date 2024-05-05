@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-client .active {
+    background-color: unset !important;
+    font-weight: bold !important;
+    color: #8E39D3 !important;
+}
+
+.dataTables_filter input {
+    @apply input input-bordered
+}
+
+#vacancies_table_length select {
+    @apply select select-bordered
+}
+
+.dataTables_paginate,
+.dataTables_info {
+    display: unset!important;
+    margin-top: 16px !important;
+    padding: 0 0 !important;
+}
+
+.paginate_button {
+    display: unset!important;
+    @apply btn
+}
+
+.paginate_button.current {
+   @apply border-0
+}
+
+.paginate_button.previous {
+    @apply font-bold
+}
+
+.paginate_button.previous.disabled {
+    @apply font-normal
+}
+
+.paginate_button.next {
+    @apply font-bold
+}
+
+.paginate_button.next.disabled {
+    @apply font-normal
+}
+
+.navbar {
+    min-height: unset !important;
+}
+
+li .active {
+    background-color: #F2F2F2 !important;
+    color: unset !important;
+    font-weight: 600 !important;
+}
+
+.requirements-container ul {
+    @apply list-disc
+}
